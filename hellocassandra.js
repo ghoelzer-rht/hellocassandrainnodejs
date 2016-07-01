@@ -1,7 +1,7 @@
 
 var cql = require('node-cassandra-cql');
 
-var client = new cql.Client({hosts: ['127.0.0.1:9042'], keyspace: 'test', username: 'testuser', password: 'testuser'});
+var client = new cql.Client({hosts: ['172.30.107.103:9042'], keyspace: 'test', username: 'testuser', password: 'testuser'});
 
 client.execute('SELECT * FROM test_table', [],
 
